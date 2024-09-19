@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding:0;
+    border: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.upperline{
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: top;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.roboto-logo{
+    font-family: "Roboto",sans-serif;
+}
+.logo{
+    color:white;
+    font-size: 28px;
+
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+.container2{
+    width:1200px;
+    height: 200px;
+    margin: 300px auto;
+    color: whitesmoke;
+}
+.glass{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+footer{
+    background-color: black;
+}
+.footerrk{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+.social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.social a:hover{
+    background-color: #111;
+    transition: 0.5x;
+}
+.social a:hover{
+    color:white;
+    transition: 0.5s;
+}
+
+.foot-panel{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 150px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.i{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}

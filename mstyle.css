@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    background-image: url("");
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-header h1 {
+    font-size: 2.5rem;
+    color: #d2691e;
+}
+
+.menu-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    color: #8b4513;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d2691e;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-description {
+    flex-grow: 1;
+}
+
+.menu-description h3 {
+    font-size: 1.5rem;
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+.menu-description p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.menu-description .price {
+    font-weight: bold;
+    color: #d2691e;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        margin-bottom: 15px;
+    }
+
+    .menu-description {
+        text-align: center;
+    }
+}
